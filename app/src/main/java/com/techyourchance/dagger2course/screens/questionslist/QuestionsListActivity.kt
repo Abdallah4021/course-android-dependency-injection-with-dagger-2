@@ -35,7 +35,6 @@ class QuestionsListActivity : AppCompatActivity(), QuestionsListViewMvc.Listener
         super.onCreate(savedInstanceState)
 
         viewMvc = QuestionsListViewMvc(LayoutInflater.from(this), null)
-
         setContentView(viewMvc.rootView)
 
         // init retrofit

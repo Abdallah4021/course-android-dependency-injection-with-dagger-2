@@ -56,7 +56,7 @@ class QuestionsListActivity : AppCompatActivity(), QuestionsListViewMvc.Listener
     override fun onStop() {
         super.onStop()
         coroutineScope.coroutineContext.cancelChildren()
-        viewMvc.unregisterListener(this)
+        viewMvc.unRegisterListener(this)
     }
 
     override fun onRefreshClicked() {
